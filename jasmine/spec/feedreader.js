@@ -82,11 +82,10 @@ $(function() {
         beforeEach(function(done) {
             loadFeed(0, function() {
                 initialFeed = $('.feed').html();
-                done();
-            });
-            loadFeed(1, function() {
-                nextFeed = $('.feed').html();
-                done();
+                loadFeed(1, function() {
+                    nextFeed = $('.feed').html();
+                    done();
+                });
             });
         });
 
